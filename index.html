@@ -21,7 +21,7 @@
     <div class="hero-overlay"></div>
     <div class="hero-content container">
       <p class="hero-eyebrow fade-up">NILZ — Muscat, Oman</p>
-      <h1 class="hero-headline display fade-up delay-1" data-cms="hero_headline">Design Spaces.<br>Elevate Life.</h1>
+      <h1 class="hero-headline display" data-cms="hero_headline" style="opacity:0">Design Spaces.<br>Elevate Life.</h1>
       <p class="hero-sub fade-up delay-2" data-cms="hero_sub">Architecture &amp; Interior Design Group</p>
       <div class="hero-actions fade-up delay-3">
         <a href="projects.html" class="btn btn--gold">View Projects</a>
@@ -94,6 +94,7 @@
     import { initRotatingText } from './js/components/rotating-text.js';
     import { renderHomeProjects, renderSiteContent } from './js/content.js';
     import { init as initMain } from './js/main.js';
+    import { initAnimatedText } from './js/components/animated-text.js';
 
     initHeader();
     initFooter();
@@ -108,6 +109,13 @@
     });
     await renderHomeProjects('#home-projects');
     await renderSiteContent('home');
+    initAnimatedText('.hero-headline', {
+      animationType: 'letters',
+      staggerDelay:  0.04,
+      duration:      0.6,
+      delay:         0.3,
+      initialY:      10,
+    });
     initMain();
   </script>
 </body>
