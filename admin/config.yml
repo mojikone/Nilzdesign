@@ -1,6 +1,8 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: mojikone/Nilzdesign
   branch: main
+  base_url: https://oauth.nilzdesign.com
 
 media_folder: "assets/images"
 public_folder: "assets/images"
