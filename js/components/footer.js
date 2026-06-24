@@ -85,7 +85,7 @@ export function initFooter() {
 
   <div class="footer-bottom container">
     <span>&copy; ${year} Niloufar Zanjani · Architect &amp; Interior Designer</span>
-    <a href="contact.html#cv" class="footer-bottom-cta">Download CV &rarr;</a>
+    <a href="cv.html" target="_blank" class="footer-bottom-cta">Download CV &rarr;</a>
   </div>
 
 </footer>`;

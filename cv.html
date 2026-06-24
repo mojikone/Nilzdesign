@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV — Niloufar Zanjani · Architect & Interior Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:  #0f1932;
+      --gold:  #c8a050;
+      --gray:  #6b7280;
+      --cream: #f8f6f2;
+      --white: #ffffff;
+    }
+
+    body {
+      font-family: 'DM Sans', system-ui, sans-serif;
+      font-size: 10pt;
+      color: var(--navy);
+      background: #e8e5e0;
+      line-height: 1.55;
+    }
+
+    /* ── Print button (screen only) ───────── */
+    .print-bar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      background: var(--navy);
+      color: rgba(255,255,255,0.7);
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 10px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 100;
+    }
+    .print-bar span { opacity: 0.55; }
+    .print-btn {
+      background: var(--gold);
+      color: var(--white);
+      border: none;
+      padding: 7px 20px;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .print-btn:hover { background: #b8902e; }
+
+    /* ── Paper ────────────────────────────── */
+    .page {
+      background: var(--white);
+      width: 210mm;
+      min-height: 297mm;
+      margin: 70px auto 40px;
+      padding: 18mm 18mm 18mm 18mm;
+      box-shadow: 0 4px 40px rgba(0,0,0,0.18);
+    }
+
+    /* ── Header ───────────────────────────── */
+    .cv-header {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 24px;
+      align-items: start;
+      border-bottom: 2px solid var(--navy);
+      padding-bottom: 14px;
+      margin-bottom: 20px;
+    }
+    .cv-name {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 28pt;
+      font-weight: 600;
+      line-height: 1;
+      letter-spacing: -0.01em;
+      color: var(--navy);
+    }
+    .cv-title {
+      font-size: 9.5pt;
+      font-weight: 400;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-top: 6px;
+    }
+    .cv-monogram {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 32pt;
+      font-weight: 600;
+      color: var(--gold);
+      opacity: 0.18;
+      line-height: 1;
+      user-select: none;
+    }
+
+    /* ── Contact bar ──────────────────────── */
+    .cv-contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 20px;
+      margin-bottom: 22px;
+      font-size: 8.5pt;
+      color: var(--gray);
+    }
+    .cv-contact a { color: var(--gray); text-decoration: none; }
+    .cv-contact a:hover { color: var(--gold); }
+    .cv-contact-item {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .cv-contact-item svg {
+      width: 11px; height: 11px;
+      flex-shrink: 0;
+      color: var(--gold);
+    }
+
+    /* ── Two-column layout ────────────────── */
+    .cv-body {
+      display: grid;
+      grid-template-columns: 1fr 68mm;
+      gap: 28px;
+    }
+    .cv-main {}
+    .cv-side {}
+
+    /* ── Section ──────────────────────────── */
+    .cv-section { margin-bottom: 22px; }
+    .cv-section:last-child { margin-bottom: 0; }
+    .cv-section-title {
+      font-size: 6.5pt;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      border-bottom: 1px solid rgba(200,160,80,0.3);
+      padding-bottom: 5px;
+      margin-bottom: 12px;
+    }
+
+    /* ── Profile ──────────────────────────── */
+    .cv-profile {
+      font-size: 9pt;
+      line-height: 1.65;
+      color: #3a4460;
+    }
+
+    /* ── Experience ───────────────────────── */
+    .exp-item { margin-bottom: 14px; }
+    .exp-item:last-child { margin-bottom: 0; }
+    .exp-dates {
+      font-size: 7.5pt;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      color: var(--gold);
+      margin-bottom: 1px;
+    }
+    .exp-role {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 10.5pt;
+      font-weight: 600;
+      color: var(--navy);
+      line-height: 1.2;
+    }
+    .exp-org {
+      font-size: 8pt;
+      color: var(--gray);
+      font-style: italic;
+      margin-bottom: 5px;
+    }
+    .exp-desc {
+      font-size: 8.5pt;
+      color: #3a4460;
+      line-height: 1.6;
+    }
+    .exp-list {
+      list-style: none;
+      font-size: 8.5pt;
+      color: #3a4460;
+      line-height: 1.6;
+    }
+    .exp-list li {
+      padding-left: 12px;
+      position: relative;
+      margin-bottom: 2px;
+    }
+    .exp-list li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--gold);
+      font-size: 7pt;
+    }
+
+    /* ── Skills sidebar ───────────────────── */
+    .skill-group-title {
+      font-size: 7pt;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--navy);
+      margin-bottom: 6px;
+      margin-top: 10px;
+    }
+    .skill-group-title:first-child { margin-top: 0; }
+    .skill-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-bottom: 2px;
+    }
+    .skill-pill {
+      font-size: 7.5pt;
+      padding: 2px 8px;
+      border-radius: 100px;
+      border: 1px solid rgba(15,25,50,0.2);
+      color: var(--navy);
+      background: var(--cream);
+      line-height: 1.5;
+    }
+    .skill-pill--hi {
+      background: var(--navy);
+      color: var(--white);
+      border-color: var(--navy);
+    }
+
+    /* ── Education ────────────────────────── */
+    .edu-degree {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 10pt;
+      font-weight: 600;
+      color: var(--navy);
+    }
+    .edu-field {
+      font-size: 8.5pt;
+      color: #3a4460;
+    }
+    .edu-note {
+      font-size: 7.5pt;
+      color: var(--gray);
+      margin-top: 3px;
+    }
+
+    /* ── Key facts list ───────────────────── */
+    .facts-list {
+      list-style: none;
+      font-size: 8.5pt;
+    }
+    .facts-list li {
+      display: flex;
+      gap: 8px;
+      align-items: baseline;
+      padding: 4px 0;
+      border-bottom: 1px solid rgba(15,25,50,0.07);
+    }
+    .facts-list li:last-child { border-bottom: none; }
+    .facts-key {
+      font-weight: 500;
+      color: var(--gold);
+      min-width: 54px;
+      font-size: 7pt;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      flex-shrink: 0;
+    }
+    .facts-val { color: #3a4460; }
+
+    /* ── Portfolio strip ──────────────────── */
+    .cv-portfolio {
+      background: var(--navy);
+      color: var(--white);
+      padding: 10px 14px;
+      border-radius: 4px;
+      margin-top: 14px;
+      font-size: 8pt;
+    }
+    .cv-portfolio-label {
+      font-size: 6.5pt;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 3px;
+    }
+    .cv-portfolio a {
+      color: rgba(255,255,255,0.8);
+      text-decoration: none;
+      font-weight: 400;
+      word-break: break-all;
+    }
+
+    /* ── Print ────────────────────────────── */
+    @media print {
+      body { background: none; font-size: 10pt; }
+      .print-bar { display: none; }
+      .page {
+        margin: 0;
+        padding: 14mm 16mm 14mm 16mm;
+        box-shadow: none;
+        width: 100%;
+        min-height: 0;
+      }
+      a { color: inherit !important; text-decoration: none !important; }
+    }
+
+    @media (max-width: 230mm) {
+      .page { width: 100%; margin: 56px 0 0; padding: 20px; }
+      .cv-body { grid-template-columns: 1fr; }
+      .cv-side { border-top: 1px solid rgba(15,25,50,0.1); padding-top: 18px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="print-bar">
+    <span>Niloufar Zanjani — CV</span>
+    <button class="print-btn" onclick="window.print()">Save as PDF</button>
+  </div>
+
+  <div class="page">
+
+    <!-- Header -->
+    <header class="cv-header">
+      <div>
+        <h1 class="cv-name">Niloufar Zanjani</h1>
+        <p class="cv-title">Architect &amp; Interior Designer</p>
+      </div>
+      <div class="cv-monogram" aria-hidden="true">NZ</div>
+    </header>
+
+    <!-- Contact bar -->
+    <div class="cv-contact">
+      <span class="cv-contact-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92v2z"/></svg>
+        +968 99009464
+      </span>
+      <span class="cv-contact-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        <a href="mailto:niloofar.zanjani22@gmail.com">niloofar.zanjani22@gmail.com</a>
+      </span>
+      <span class="cv-contact-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Al Mouj, Muscat · Oman
+      </span>
+      <span class="cv-contact-item">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        <a href="https://linkedin.com/in/niloufar-zanjani-2888a4271">linkedin.com/in/niloufar-zanjani</a>
+      </span>
+      <span class="cv-contact-item">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        @nilz.design
+      </span>
+    </div>
+
+    <!-- Body -->
+    <div class="cv-body">
+
+      <!-- Main column -->
+      <div class="cv-main">
+
+        <!-- Profile -->
+        <div class="cv-section">
+          <h2 class="cv-section-title">Profile</h2>
+          <p class="cv-profile">Architect and interior designer with over 13 years of professional experience across residential and commercial projects. After a decade of design, construction supervision, and project management spanning Iran and Oman, I founded NILZ Architecture &amp; Interior Design Group in Al Mouj, Muscat. My work bridges the precision of engineering with the sensibility of art — producing spaces that are as functional as they are beautiful. I bring full-scope capability from concept sketches to construction oversight, with strong expertise in high-end villa and office interiors.</p>
+        </div>
+
+        <!-- Experience -->
+        <div class="cv-section">
+          <h2 class="cv-section-title">Experience</h2>
+
+          <div class="exp-item">
+            <p class="exp-dates">2022 — Present</p>
+            <p class="exp-role">Founder &amp; Principal Designer</p>
+            <p class="exp-org">NILZ Architecture &amp; Interior Design Group · Muscat, Oman</p>
+            <ul class="exp-list">
+              <li>Leading residential and commercial interior design projects across Muscat</li>
+              <li>Full-scope delivery: concept, design development, and construction supervision</li>
+              <li>Specialising in high-end villa and office interiors for discerning clients</li>
+              <li>Managing client relationships, contractor coordination, and project timelines</li>
+            </ul>
+          </div>
+
+          <div class="exp-item">
+            <p class="exp-dates">2019 — 2022</p>
+            <p class="exp-role">Freelance Architect &amp; Interior Designer</p>
+            <p class="exp-org">Self-Employed · Muscat, Oman</p>
+            <ul class="exp-list">
+              <li>Delivered residential interior design and architectural consultancy projects</li>
+              <li>Developed detailed design packages including 3D visualizations and technical drawings</li>
+            </ul>
+          </div>
+
+          <div class="exp-item">
+            <p class="exp-dates">2012 — 2019</p>
+            <p class="exp-role">Architect &amp; Interior Designer</p>
+            <p class="exp-org">Private Practice · Iran</p>
+            <ul class="exp-list">
+              <li>Managed architectural and interior design projects across residential and commercial sectors</li>
+              <li>Oversaw construction supervision and coordinated multi-disciplinary project teams</li>
+              <li>Led design from initial brief through to handover and post-occupancy review</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="cv-section">
+          <h2 class="cv-section-title">Education</h2>
+          <p class="exp-dates">Architecture</p>
+          <p class="edu-degree">Master of Architecture (M.Arch)</p>
+          <p class="edu-note">OSE Member — Oman Society of Engineers</p>
+        </div>
+
+        <!-- Portfolio strip -->
+        <div class="cv-portfolio">
+          <p class="cv-portfolio-label">Portfolio</p>
+          <a href="https://mojikone.github.io/Nilzdesign/">mojikone.github.io/Nilzdesign</a>
+        </div>
+
+      </div>
+
+      <!-- Side column -->
+      <div class="cv-side">
+
+        <!-- Key facts -->
+        <div class="cv-section">
+          <h2 class="cv-section-title">At a Glance</h2>
+          <ul class="facts-list">
+            <li><span class="facts-key">Exp.</span><span class="facts-val">13+ Years</span></li>
+            <li><span class="facts-key">Based</span><span class="facts-val">Muscat, Oman</span></li>
+            <li><span class="facts-key">Degree</span><span class="facts-val">M.Arch</span></li>
+            <li><span class="facts-key">Member</span><span class="facts-val">OSE</span></li>
+            <li><span class="facts-key">Lang.</span><span class="facts-val">English · Farsi · Arabic (basic)</span></li>
+          </ul>
+        </div>
+
+        <!-- Design & Visualization -->
+        <div class="cv-section">
+          <h2 class="cv-section-title">Design &amp; Visualization</h2>
+          <div class="skill-pills">
+            <span class="skill-pill skill-pill--hi">3ds Max</span>
+            <span class="skill-pill skill-pill--hi">V-Ray</span>
+            <span class="skill-pill skill-pill--hi">Corona Renderer</span>
+            <span class="skill-pill skill-pill--hi">Lumion</span>
+            <span class="skill-pill skill-pill--hi">Unreal Engine</span>
+            <span class="skill-pill skill-pill--hi">SketchUp</span>
+          </div>
+        </div>
+
+        <!-- Technical & BIM -->
+        <div class="cv-section">
+          <h2 class="cv-section-title">Technical &amp; BIM</h2>
+          <div class="skill-pills">
+            <span class="skill-pill">Revit</span>
+            <span class="skill-pill">AutoCAD</span>
+            <span class="skill-pill">BIM Workflow</span>
+          </div>
+        </div>
+
+        <!-- Disciplines -->
+        <div class="cv-section">
+          <h2 class="cv-section-title">Disciplines</h2>
+          <div class="skill-pills">
+            <span class="skill-pill">Interior Design</span>
+            <span class="skill-pill">Architecture</span>
+            <span class="skill-pill">Construction Supervision</span>
+            <span class="skill-pill">Project Management</span>
+            <span class="skill-pill">Landscape &amp; Exterior</span>
+            <span class="skill-pill">3D Visualization</span>
+          </div>
+        </div>
+
+        <!-- Project types -->
+        <div class="cv-section">
+          <h2 class="cv-section-title">Project Types</h2>
+          <div class="skill-pills">
+            <span class="skill-pill">Luxury Villas</span>
+            <span class="skill-pill">Apartments</span>
+            <span class="skill-pill">Office Interiors</span>
+            <span class="skill-pill">Commercial</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    // Keyboard shortcut
+    document.addEventListener('keydown', e => {
+      if ((e.ctrlKey || e.metaKey) && e.key === 'p') return;
+    });
+  </script>
+</body>
+</html>

@@ -23,7 +23,7 @@ export function initHeader() {
     <nav class="header-nav" id="header-nav">
       <ul>${navLinks}</ul>
     </nav>
-    <a href="contact.html#cv" class="btn btn--gold header-cta">Download CV</a>
+    <a href="cv.html" target="_blank" class="btn btn--gold header-cta">Download CV</a>
     <button class="header-burger" id="header-burger" aria-label="Toggle menu">
       <span></span><span></span><span></span>
     </button>
