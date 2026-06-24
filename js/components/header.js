@@ -1,17 +1,9 @@
-// W2/js/components/header.js
-// Injects the site header into every page and handles:
-// - Transparent → solid on scroll
-// - Active nav link highlighting
-// - Mobile hamburger toggle
-
 export function initHeader() {
-  // Normalise: strip .html so both '/about' and '/about.html' match 'about.html'
   const currentSlug = (location.pathname.split('/').pop() || 'index').replace(/\.html$/, '');
 
   const pages = [
     { href: 'index.html',    label: 'Home' },
-    { href: 'services.html', label: 'Services' },
-    { href: 'projects.html', label: 'Projects' },
+    { href: 'projects.html', label: 'Work' },
     { href: 'about.html',    label: 'About' },
     { href: 'contact.html',  label: 'Contact' },
   ];
@@ -25,14 +17,13 @@ export function initHeader() {
   const html = `
 <header id="site-header">
   <div class="header-inner container">
-    <a href="index.html" class="header-logo">
-      <img src="assets/images/logo-white.png" alt="NILZ" class="header-logo__img header-logo__img--white">
-      <img src="assets/images/logo-blue.png"  alt="NILZ" class="header-logo__img header-logo__img--blue">
+    <a href="index.html" class="header-logo header-logo--monogram">
+      <span class="header-monogram">NZ</span>
     </a>
     <nav class="header-nav" id="header-nav">
       <ul>${navLinks}</ul>
     </nav>
-    <a href="contact.html" class="btn btn--outline header-cta">Start a Project</a>
+    <a href="contact.html#cv" class="btn btn--gold header-cta">Download CV</a>
     <button class="header-burger" id="header-burger" aria-label="Toggle menu">
       <span></span><span></span><span></span>
     </button>

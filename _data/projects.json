@@ -1,54 +1,397 @@
 {
+  "collections": [
+    {
+      "id": "residential",
+      "title": "Residential Design",
+      "category": "Interior Design",
+      "location": "Muscat, Oman",
+      "image": "assets/images/projects/residential/al-ansab/06.jpg",
+      "description": "Full-home interiors for villas and apartments across Muscat — from grand family villas to compact, optimised living. Each project is shaped in natural materials and warm, tailored detail. Explore each individually."
+    },
+    {
+      "id": "office",
+      "title": "Commercial & Office Space Design",
+      "category": "Interior Design",
+      "location": "Muscat, Oman",
+      "image": "assets/images/projects/office-workspace/madineh/01.jpg",
+      "description": "Office and workspace designs across multiple Muscat locations — from a refined modern scheme to a raw industrial one. Explore each project individually."
+    }
+  ],
   "projects": [
     {
       "id": "villa-facade",
-      "title": "Modern Villa Facade",
-      "category": "Architecture",
-      "location": "Muscat, Oman",
-      "image": "assets/images/project-2.jpg",
-      "description": "A warm, contemporary facade designed to harmonise with the Omani landscape while asserting a bold modern identity.",
+      "collection": "residential",
+      "title": "Al Ansab Villa",
+      "category": "Interior Design",
+      "location": "Al Ansab, Muscat — Oman",
+      "image": "assets/images/projects/residential/al-ansab/03.jpg",
+      "description": "A warm, contemporary family villa in Al Ansab where grand scale meets everyday intimacy. Natural materials — light oak, travertine, book-matched marble, and polished porcelain — are softened by bouclé, velvet, and sculptural brass lighting. Spaces flow openly from a double-height entrance hall through the living and dining areas to a formal majlis, balancing relaxed family life with refined hosting.",
+      "homeTitle": "Interior Design & Space Planning",
+      "homeDescription": "Designing elegant and functional spaces that enhance everyday living through thoughtful planning and refined details.",
       "featured": true,
-      "order": 2
+      "order": 2,
+      "overview": "A warm, contemporary family villa in Al Ansab where grand scale meets intimacy. The interiors rest on a palette of natural materials — light oak, travertine, polished porcelain, and book-matched marble — softened by bouclé and velvet and warmed by sculptural brass lighting. Spaces flow openly from a welcoming entrance hall through living and dining to a formal majlis, balancing relaxed family life with refined hosting.",
+      "sections": [
+        {
+          "title": "Entrance & Hall",
+          "description": "The arrival sequence, setting the villa's warm and material-rich tone.",
+          "renders": [
+            { "image": "assets/images/projects/residential/al-ansab/01.jpg", "caption": "A double-height entrance hall wrapped in light oak veneer, with a book-matched marble console, abstract art, and a bronze figure lending a calm, gallery-like quality. Large-format polished porcelain floors and a soft hand-knotted rug keep it grounded and family-friendly, while reeded-glass doors filter daylight from the rooms beyond. Warm recessed and track lighting wash the timber and stone for an inviting first impression." }
+          ]
+        },
+        {
+          "title": "Living Room",
+          "description": "An open, serene living space oriented to the garden.",
+          "renders": [
+            { "image": "assets/images/projects/residential/al-ansab/02.jpg", "caption": "A low, modular bouclé sofa and rounded armchairs gather around organic travertine tables on a soft, line-drawn rug, framed by floor-to-ceiling sheers that diffuse the garden light. A sculptural brass linear chandelier anchors the seating, while a tonal palette of cream, sand, and warm white on polished porcelain keeps the room calm, tactile, and effortlessly elegant — natural materials chosen to feel soft underfoot and timeless to the eye." }
+          ]
+        },
+        {
+          "title": "Stairs",
+          "description": "A sculptural stair that doubles as the villa's centrepiece.",
+          "renders": [
+            { "image": "assets/images/projects/residential/al-ansab/03.jpg", "caption": "The staircase rises against a curved, fluted feature wall embedded with pin-points of warm light, framed by a slim brass-and-glass balustrade. A sculptural bonsai in a sunken garden brings nature indoors, while bouclé swivel chairs, a green-marble table, and a walnut-and-bouclé bench create a quiet lounge at its foot. Soft, layered lighting turns the whole composition into a glowing focal point after dusk — the concept of a stair conceived as sculpture rather than mere circulation." }
+          ]
+        },
+        {
+          "title": "Dining",
+          "description": "A refined dining room for everyday meals and gatherings.",
+          "renders": [
+            { "image": "assets/images/projects/residential/al-ansab/04.jpg", "caption": "An oval travertine table paired with cognac-leather chairs on dark timber frames, beneath a cascading spiral chandelier." },
+            { "image": "assets/images/projects/residential/al-ansab/05.jpg", "caption": "Seen across the family table, the dining room layers light oak paneling with backlit display niches, reeded-glass screens, and a statement fringe chandelier in brushed brass. Warm leather, stone, and timber sit against polished porcelain floors, while concealed cove and track lighting keep the mood soft — natural, tactile materials composed for both quiet family dinners and larger gatherings." }
+          ]
+        },
+        {
+          "title": "Majlis",
+          "description": "The formal majlis, the villa's most ceremonial space for receiving guests.",
+          "renders": [
+            { "image": "assets/images/projects/residential/al-ansab/06.jpg", "caption": "A symmetrical majlis with quilted white sofas, rust-velvet armchairs, and green-marble tables arranged for conversation and hospitality." },
+            { "image": "assets/images/projects/residential/al-ansab/07.jpg", "caption": "The majlis is the villa's grandest gesture — book-matched marble with gold veining sweeps across the floor beneath a dramatic cascading brass chandelier. Quilted sofas and rust-velvet armchairs sit within light oak paneling and warm backlit niches, framed by sheer-draped glazing, while magnetic track lighting and vertical wall sconces give the room a refined, hotel-like sense of occasion. The concept: a ceremonial heart that elevates the Omani tradition of hosting through rich, natural materials and theatrical light." }
+          ]
+        },
+        {
+          "title": "Garden & Pool",
+          "description": "The villa's outdoor realm — a landscaped courtyard, lap pool, and shaded terraces designed for the Omani climate.",
+          "renders": [
+            { "image": "assets/images/projects/residential/al-ansab/08.jpg", "caption": "A landscaped courtyard frames a linear lap pool, with mature palms and layered planting set against crisp white volumes. Large-format stone paving — striped with bands of lawn — runs from a covered terrace to the water's edge, durable and cool underfoot in the Omani climate." },
+            { "image": "assets/images/projects/residential/al-ansab/09.jpg", "caption": "A timber-battened pergola shades an outdoor lounge of woven seating around a sculptural table, with an olive tree in a raised planter. The slatted oak filters harsh sun while keeping the terrace open and breezy, extending the living spaces outdoors." },
+            { "image": "assets/images/projects/residential/al-ansab/10.jpg", "caption": "Sun loungers and a parasol line the poolside, screened by a planted boundary wall and palms for privacy. Honed stone paving and the reflective pool keep the courtyard calm and cool — an everyday retreat within the home." }
+          ]
+        }
+      ]
     },
     {
-      "id": "living-space",
-      "title": "Contemporary Living Space",
+      "id": "residential-muscat-hills",
+      "collection": "residential",
+      "title": "Muscat Hills Apartment",
       "category": "Interior Design",
-      "location": "Muscat, Oman",
-      "image": "assets/images/project-3.jpg",
-      "description": "Open-plan living redefined — clean lines, natural materials, and carefully considered light create a space that is calm and joyful.",
-      "featured": true,
-      "order": 3
+      "location": "Muscat Hills, Muscat — Oman",
+      "image": "assets/images/projects/residential/muscat-hills/03.jpg",
+      "description": "A compact Muscat Hills apartment designed for efficient, optimised living — integrated storage, multi-functional joinery, and a warm, tailored material palette.",
+      "featured": false,
+      "order": 3,
+      "overview": "A compact apartment in Muscat Hills, planned to make the most of a limited footprint. Every zone earns its place through efficient layouts, integrated storage, and multi-functional joinery — an open living and dining flow in warm taupe and dark herringbone wood, a tailored, moody master suite, and a compact bathroom and balcony that feel generous despite their size.",
+      "sections": [
+        {
+          "title": "Entrance",
+          "description": "A welcoming, space-efficient entry.",
+          "renders": [
+            { "image": "assets/images/projects/residential/muscat-hills/01.jpg", "caption": "A built-in bench with concealed shoe storage and a warm oak top doubles as a seat for putting on shoes, set against a fluted white panel and a vertical garden and washed in soft linear light — a compact, practical welcome." }
+          ]
+        },
+        {
+          "title": "Dining",
+          "description": "A dining zone within the open plan.",
+          "renders": [
+            { "image": "assets/images/projects/residential/muscat-hills/02.jpg", "caption": "The dining area sits inside the open living plan — a round table with soft taupe chairs beside the window, keeping circulation easy and the small footprint feeling open and generous." }
+          ]
+        },
+        {
+          "title": "Living Room",
+          "description": "A cosy, uncluttered living zone.",
+          "renders": [
+            { "image": "assets/images/projects/residential/muscat-hills/03.jpg", "caption": "A low, modular L-shaped taupe sofa is tucked into a backlit recess around a small walnut coffee table — a space-saving arrangement that keeps the open plan calm and uncluttered." },
+            { "image": "assets/images/projects/residential/muscat-hills/04.jpg", "caption": "The media wall pairs a slim wall-mounted TV on a warm microcement panel with a floating storage console below; beside it, a warm wood-lined niche with trailing greenery softens the composition and conceals services." }
+          ]
+        },
+        {
+          "title": "Bedroom",
+          "description": "A tailored, moody master suite.",
+          "renders": [
+            { "image": "assets/images/projects/residential/muscat-hills/05.jpg", "caption": "The bed sits against a fluted headboard wall layered in grey and warm timber, flanked by chrome sphere pendants and black-gloss floating nightstands — a tailored, masculine composition." },
+            { "image": "assets/images/projects/residential/muscat-hills/06.jpg", "caption": "A smoked-glass sliding wardrobe with internal LED lighting lines one wall, keeping clothing storage generous yet visually quiet in the compact room." },
+            { "image": "assets/images/projects/residential/muscat-hills/07.jpg", "caption": "Opposite the bed, a slim TV floats on a warm-lit console while a sculptural red lounge chair adds a bold accent and a quiet reading corner by the window." },
+            { "image": "assets/images/projects/residential/muscat-hills/08.jpg", "caption": "A bedside detail — a black-gloss nightstand on a slim chrome frame, a sphere reading light, and playful figurines against the fluted headboard." },
+            { "image": "assets/images/projects/residential/muscat-hills/09.jpg", "caption": "A floating black dressing table with a large mirror and adjustable reading lights carves a compact vanity into the bedroom wall, using every surface efficiently." },
+            { "image": "assets/images/projects/residential/muscat-hills/10.jpg", "caption": "The red lounge chair and a tulip side table form a sunlit reading spot beside the floor-to-ceiling glazing." }
+          ]
+        },
+        {
+          "title": "Bathroom",
+          "description": "A compact bathroom organised for efficiency.",
+          "renders": [
+            { "image": "assets/images/projects/residential/muscat-hills/11.jpg", "caption": "A walk-in shower with recessed niches, a wall-hung toilet on a stone feature panel, and a floating fluted-wood vanity with a stone top, brass fittings, and a backlit round mirror — warm materials and smart planning in a small footprint." }
+          ]
+        },
+        {
+          "title": "Balcony",
+          "description": "A small outdoor retreat.",
+          "renders": [
+            { "image": "assets/images/projects/residential/muscat-hills/12.jpg", "caption": "A small balcony turned into a green retreat — artificial turf, potted planting, a woven accent chair, and a warm timber-slatted pergola framing the Muscat Hills view." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "office-al-ozaiba",
+      "collection": "office",
+      "title": "Al-Ozaiba Office",
+      "category": "Interior Design",
+      "location": "Al-Ozaiba, Muscat — Oman",
+      "image": "assets/images/projects/office-workspace/al-ozaiba/02.jpg",
+      "description": "A sleek, modern headquarters for a commercial trading company in Al-Ozaiba — a refined monochrome palette of black, white and grey, glass-walled offices, backlit display niches, and soft velvet seating threaded with greenery.",
+      "featured": false,
+      "order": 2,
+      "overview": "An office and workspace design for a commercial trading company at its Al-Ozaiba location, in a refined modern language. A disciplined palette of black, white and grey is paired with slim black-framed glass partitions, backlit display niches, recessed linear lighting, and soft velvet furniture — with greenery threading through executive offices, meeting rooms, and bright open work zones.",
+      "sections": [
+        {
+          "title": "Management Office",
+          "description": "The leadership office — glazed in slim black steel and lined with a full-height white lacquer shelving wall, private and calm yet visually connected to the workspace beyond.",
+          "renders": [
+            { "image": "assets/images/projects/office-workspace/al-ozaiba/01.jpg", "caption": "The leadership office — a sculptural black-steel desk against a full-height white lacquer shelving wall." },
+            { "image": "assets/images/projects/office-workspace/al-ozaiba/02.jpg", "caption": "Seen through its slim black-framed glass wall, the management office balances transparency with privacy. A sculptural black-steel desk sits over large-format grey porcelain tile, wrapped by a full-height white matte-lacquer shelving wall whose warm backlit niches — set in a rhythm of large and small voids — display objects, while flush push-to-open storage hides clutter behind a calm, gallery-like backdrop. Rounded grey-velvet seating adds comfort for informal discussion, recessed linear LED and concealed cove lighting keep the ceiling clean, and slim linear slot diffusers integrate the air-conditioning invisibly into the joinery lines — essential for steady comfort in Muscat's climate." }
+          ]
+        },
+        {
+          "title": "Conference Room",
+          "description": "The conference room — the project's most dramatic space, where sweeping parallel runs of linear light give a long meeting table scale and movement, framed by the signature backlit shelving and a dark glazed wall.",
+          "renders": [
+            { "image": "assets/images/projects/office-workspace/al-ozaiba/04.jpg", "caption": "A long meeting table facing a presentation wall, framed by the backlit white shelving." },
+            { "image": "assets/images/projects/office-workspace/al-ozaiba/05.jpg", "caption": "The conference room is the project's most dramatic space, where multiple parallel runs of recessed linear light sweep across the ceiling toward a dark glazed wall, giving scale and a sense of movement. A long table seats the full team, framed by grey-velvet chairs and a wall-mounted screen, with the white display shelving returning behind as a backlit backdrop whose niches give the room depth. The dark glass partition provides acoustic and visual separation from the open office without losing openness, and linear air diffusers integrated into the same lighting lines keep climate control even and quiet for longer meetings — all in the disciplined palette of black steel, white lacquer, grey tile and velvet." }
+          ]
+        },
+        {
+          "title": "Workstations",
+          "description": "The open office area at the heart of the plan — workstations laid out in facing rows around a floating green spine, with brighter clusters opening to floor-to-ceiling glazing and city views.",
+          "renders": [
+            { "image": "assets/images/projects/office-workspace/al-ozaiba/03.jpg", "caption": "The open workspace — white desks with slim black-steel frames and iMacs beneath a floating green planter." },
+            { "image": "assets/images/projects/office-workspace/al-ozaiba/06.jpg", "caption": "Workstations in facing pairs, kept crisp and ordered in white, black and grey." },
+            { "image": "assets/images/projects/office-workspace/al-ozaiba/07.jpg", "caption": "A brighter cluster opening to floor-to-ceiling glazing with city views." },
+            { "image": "assets/images/projects/office-workspace/al-ozaiba/08.jpg", "caption": "Across the open office, clean white desks with slim black-steel frames pair with grey-velvet task chairs in two facing rows. Floating planter boxes threaded with linear light bring greenery in and visually lower the tall ceiling, while white lacquer storage and warm-lit niches keep the floor uncluttered over large-format grey tile. Recessed linear lighting gives glare-free task light, concealed slot diffusers deliver even airflow, and the brighter clusters open to floor-to-ceiling glazing and city views — calm, minimal and modern throughout." }
+          ]
+        },
+        {
+          "title": "Floor Plan",
+          "description": "Four clear zones within a compact 8.65 × 8.12 m footprint — private rooms to the left, storage across the top, and the open office filling the larger right-hand volume.",
+          "renders": [
+            { "image": "assets/images/projects/office-workspace/al-ozaiba/00.png", "fit": "contain", "caption": "The plan organises the office into four zones within a compact 8.65 × 8.12 m footprint — private rooms to the left, storage across the top, and the open office filling the larger right-hand volume, with eight workstations in two facing rows around a central planted spine.<br><br>1. Management Office — a private leadership office with lounge seating for informal meetings.<br>2. Conference Room — a formal meeting room for the full team, with a display wall and linear lighting.<br>3. Open Random Storage — a flexible storage strip for filing and equipment, kept out of sight.<br>4. Open Office Area — the main team workspace, with eight workstations arranged around the green spine." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "office-madinat",
+      "collection": "office",
+      "title": "Madinat Sultan Qaboos Office",
+      "category": "Interior Design",
+      "location": "Madinat Sultan Qaboos, Muscat — Oman",
+      "image": "assets/images/projects/office-workspace/madineh/03.jpg",
+      "description": "A second industrial headquarters for MERJAS — black-steel glazing, metal-grid ceilings, and freight-inspired details across reception, management, and open work.",
+      "featured": false,
+      "order": 3,
+      "overview": "An office and workspace design for MERJAS, a cargo, shipping and import–export company, at its Madinat Sultan Qaboos location. It carries the same industrial identity as the Al-Ozaiba headquarters — black-steel glazing, exposed metal-grid ceilings, and freight-inspired details — across reception, open work, management, and a coffee bar.",
+      "sections": [
+        {
+          "title": "Reception & Lounge",
+          "description": "A bold, atmospheric reception under warm and red accent lighting, with the MERJAS identity, crate seating, and a freight-inspired tyre table that speaks to the company's cargo world.",
+          "renders": [
+            { "image": "assets/images/projects/office-workspace/madineh/06.jpg", "caption": "The reception — MERJAS branding under warm and red accent lighting, with crate seating and a tyre table that ties directly to the company's cargo identity." }
+          ]
+        },
+        {
+          "title": "Open Office & Meeting",
+          "description": "A glass-walled meeting volume floating within the open office, defined by the industrial metal-grid ceiling and warmed by timber.",
+          "renders": [
+            { "image": "assets/images/projects/office-workspace/madineh/01.jpg", "caption": "A glass-walled meeting volume within the open office, defined by the industrial metal-grid ceiling and warm timber." }
+          ]
+        },
+        {
+          "title": "Management Office",
+          "description": "The management office behind black-steel glazing — warm timber desks, the MERJAS identity, and considered storage.",
+          "renders": [
+            { "image": "assets/images/projects/office-workspace/madineh/02.jpg", "caption": "The management office behind black-steel glazing, with warm timber desks, the MERJAS identity, and integrated storage." }
+          ]
+        },
+        {
+          "title": "Open Workspace",
+          "description": "Paired timber desks and ergonomic seating beneath the exposed metal-grid ceiling, anchored by a central planted spine.",
+          "renders": [
+            { "image": "assets/images/projects/office-workspace/madineh/03.jpg", "caption": "The open workspace — paired timber desks and ergonomic seating beneath the exposed metal-grid ceiling." },
+            { "image": "assets/images/projects/office-workspace/madineh/04.jpg", "caption": "Collaborative desks anchored by a central planted spine, bringing greenery into the raw industrial shell." }
+          ]
+        },
+        {
+          "title": "Coffee Bar",
+          "description": "An informal break and meeting zone — a long communal table beneath pendant lights, set against concrete and open shelving.",
+          "renders": [
+            { "image": "assets/images/projects/office-workspace/madineh/05.jpg", "caption": "The coffee bar and informal meeting zone — a long communal table beneath pendant lights, set against concrete and open shelving." }
+          ]
+        },
+        {
+          "title": "Floor Plan",
+          "description": "The full layout of the Madinat Sultan Qaboos office and its zones.",
+          "renders": [
+            { "image": "assets/images/projects/office-workspace/madineh/00.png", "fit": "contain", "caption": "The full floor plan of the Madinat Sultan Qaboos office — reception, management, open work, meeting, coffee bar, and service zones." }
+          ]
+        }
+      ]
     },
     {
       "id": "terrace-pergola",
-      "title": "Outdoor Terrace & Pergola",
-      "category": "Landscape & Exterior",
+      "title": "Plans & Details",
+      "category": "Engineering & Technical Drawings",
       "location": "Muscat, Oman",
-      "image": "assets/images/project-4.jpg",
-      "description": "An outdoor sanctuary that extends the living space — bespoke pergola structure, soft landscaping, and shaded seating areas.",
+      "image": "assets/images/projects/plans-details/hero.jpg",
+      "description": "Precise technical and working drawings — plans, sections, and construction details that turn design intent into accurate, buildable documentation.",
       "featured": true,
-      "order": 4
+      "order": 4,
+      "overview": "A complete set of architectural, structural, and detail drawings that translate design intent into precise, buildable documentation — from site plan and elevations through to foundation, framing, and construction details.",
+      "sections": [
+        {
+          "title": "Architectural Drawings",
+          "description": "",
+          "renders": [
+            { "image": "assets/images/projects/plans-details/01.png", "fit": "contain", "caption": "<span class=\"pd-draw-title\">Site Plan</span>Villa position on the plot, setbacks, road/lane widths, and area statement — the basis for permits." },
+            { "image": "assets/images/projects/plans-details/02.png", "fit": "contain", "caption": "<span class=\"pd-draw-title\">Ground Floor Plan</span>Ground level layout, parking, entrances, and door/window schedule." },
+            { "image": "assets/images/projects/plans-details/03.png", "fit": "contain", "caption": "<span class=\"pd-draw-title\">First Floor Plan</span>Bedrooms, baths, and terraces layout." },
+            { "image": "assets/images/projects/plans-details/04.png", "fit": "contain", "caption": "<span class=\"pd-draw-title\">Pent &amp; Roof Floor Plan</span>Penthouse/roof level with general notes &amp; specifications." },
+            { "image": "assets/images/projects/plans-details/05.png", "fit": "contain", "caption": "<span class=\"pd-draw-title\">Rear Elevation</span>Rear facade with levels and detail." },
+            { "image": "assets/images/projects/plans-details/06.png", "fit": "contain", "caption": "<span class=\"pd-draw-title\">Left Side Elevation</span>Side facade, massing, projections, and finishes." },
+            { "image": "assets/images/projects/plans-details/07.png", "fit": "contain", "caption": "<span class=\"pd-draw-title\">Front Elevation</span>Main facade: levels, openings, and materials." },
+            { "image": "assets/images/projects/plans-details/08.png", "fit": "contain", "caption": "<span class=\"pd-draw-title\">Sections (A-A &amp; B-B)</span>Vertical cuts: floor heights, stairs, and level relationships." }
+          ]
+        },
+        {
+          "title": "Structural Drawings",
+          "description": "",
+          "renders": [
+            { "image": "assets/images/projects/plans-details/09.png", "fit": "contain", "caption": "<span class=\"pd-draw-title\">Pent Floor Roof Layout</span>Roof framing and beam/slab reinforcement schedules." },
+            { "image": "assets/images/projects/plans-details/10.png", "fit": "contain", "caption": "<span class=\"pd-draw-title\">First Floor Roof Layout</span>First-floor roof framing and hidden beam details." },
+            { "image": "assets/images/projects/plans-details/11.png", "fit": "contain", "caption": "<span class=\"pd-draw-title\">Ground Floor Roof Layout</span>Ground-floor roof framing." },
+            { "image": "assets/images/projects/plans-details/12.png", "fit": "contain", "caption": "<span class=\"pd-draw-title\">Plinth Beam Layout</span>Plinth beam grid and schedule." },
+            { "image": "assets/images/projects/plans-details/13.png", "fit": "contain", "caption": "<span class=\"pd-draw-title\">Foundation Layout</span>Footing positions/sizes, footing &amp; strap-beam schedules." },
+            { "image": "assets/images/projects/plans-details/14.png", "fit": "contain", "caption": "<span class=\"pd-draw-title\">Column Layout (Axis)</span>Columns on grid with sections &amp; reinforcement." }
+          ]
+        },
+        {
+          "title": "Details & Services",
+          "description": "",
+          "renders": [
+            { "image": "assets/images/projects/plans-details/15.png", "fit": "contain", "caption": "<span class=\"pd-draw-title\">Compound Wall &amp; Gate Details</span>Boundary wall, gates, and wall footing." },
+            { "image": "assets/images/projects/plans-details/16.png", "fit": "contain", "caption": "<span class=\"pd-draw-title\">Footing &amp; Column Details</span>Typical footing/column/plinth reinforcement." },
+            { "image": "assets/images/projects/plans-details/17.png", "fit": "contain", "caption": "<span class=\"pd-draw-title\">Slab, Beam &amp; Staircase Details</span>Typical slab/beam/cantilever/stair reinforcement." },
+            { "image": "assets/images/projects/plans-details/18.png", "fit": "contain", "caption": "<span class=\"pd-draw-title\">Holding Tank &amp; Compound Details</span>Water tank, manholes, and drainage chambers." }
+          ]
+        }
+      ]
     },
     {
-      "id": "master-bedroom",
-      "title": "Master Bedroom & Dressing Suite",
-      "category": "Interior Design",
-      "location": "Muscat, Oman",
-      "image": "assets/images/project-5.jpg",
-      "description": "A serene retreat designed around the client's daily ritual — generous proportions, integrated storage, and soft tonal palette.",
-      "featured": false,
-      "order": 5
-    },
-    {
-      "id": "master-bathroom",
-      "title": "Master Bathroom Transformation",
+      "id": "master-suite",
+      "collection": "residential",
+      "title": "Master Suite Design — Al Ozaiba Villa",
       "category": "Interior Design",
       "location": "Al Azaiba, Muscat — Oman",
-      "image": "assets/images/project-1.jpg",
-      "description": "A complete transformation combining marble, gold fixtures, and bespoke joinery. Every surface speaks to refined luxury and functional precision.",
+      "image": "assets/images/projects/residential/master-suite/01.jpg",
+      "description": "A complete master suite for a villa in Al Ozaiba — bedroom, walk-in dressing room, and onyx-clad ensuite designed as one calm, cohesive retreat.",
+      "featured": false,
+      "order": 5,
+      "overview": "A complete master suite for a villa in Al Ozaiba, Muscat, designed as a single, cohesive retreat. A warm ivory-and-champagne palette runs from the bedroom and reading nook through a generous walk-in dressing room and into an onyx-clad ensuite. Natural marble and onyx, brushed brass, fluted oak, and large-format porcelain were chosen to be as durable and easy to maintain as they are beautiful.",
+      "sections": [
+        {
+          "title": "Rest Area & Closet",
+          "description": "The sleeping, seating, and dressing zone — shown in purple on the floor plan.",
+          "renders": [
+            { "image": "assets/images/projects/residential/master-suite/01.jpg", "caption": "A classic-contemporary bedroom in ivory and champagne. Fluted gypsum panelling and an upholstered headboard wall soften acoustics, while large-format polished porcelain floors — durable and low-maintenance — are warmed by a hand-knotted wool rug beneath a sculptural crystal chandelier." },
+            { "image": "assets/images/projects/residential/master-suite/03.jpg", "caption": "A quiet reading nook with curved camel-velvet tub chairs framed by classic mouldings and reeded oak panels. Brass bubble sconces cast a soft, layered glow, and a mirrored return opens the corner toward the dressing room — the velvet-and-brass palette is hard-wearing and timeless." },
+            { "image": "assets/images/projects/residential/master-suite/04.jpg", "caption": "A curved, backlit dressing island in soft lacquer and brushed brass anchors the walk-in closet. Warm LED-lit open shelving displays edited pieces, while a calacatta-look quartz top resists stains and daily wear." },
+            { "image": "assets/images/projects/residential/master-suite/05.jpg", "caption": "A full walk-in wardrobe with bronze-glass fronts and warm oak interiors. Integrated linear lighting makes everything easy to find; glass and lacquer surfaces wipe clean and stay dust-free." },
+            { "image": "assets/images/projects/residential/master-suite/06.jpg", "caption": "A transitional vanity-console in ivory lacquer topped with book-matched calacatta viola marble and framed by fluted oak. The sealed natural stone resists moisture, pairing beauty with practicality at the suite's threshold." }
+          ]
+        },
+        {
+          "title": "Bathroom",
+          "description": "The ensuite bathroom — shown in green on the floor plan.",
+          "renders": [
+            { "image": "assets/images/projects/residential/master-suite/07.jpg", "caption": "The ensuite centres on a sculptural freestanding tub against a book-matched onyx feature wall, backlit to reveal its translucency. Honed marble and sealed onyx handle water beautifully, while brushed-brass fixtures resist tarnishing in humid conditions." },
+            { "image": "assets/images/projects/residential/master-suite/08.jpg", "caption": "Twin oval brass mirrors over an onyx vanity with a backlit stone shelf. The warm marble and brushed-gold tapware are hard-wearing and easy to clean, while concealed lighting flatters daily grooming." },
+            { "image": "assets/images/projects/residential/master-suite/09.jpg", "caption": "A walk-in glass shower and wall-hung WC set against continuous onyx keep the wet zone open and easy to maintain. Large-format polished slabs minimise grout lines for hygiene, and the glass screen keeps the room bright and seamless." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "afkhami-villa",
+      "collection": "residential",
+      "title": "Villa Afkhami",
+      "category": "Interior Design",
+      "location": "Muscat, Oman",
+      "image": "assets/images/projects/residential/afkhami-villa/01.jpg",
+      "description": "A monochrome, minimalist villa — crisp white architecture, black marble floors, and graphic black-and-white art, opening onto serene planted courtyards.",
+      "overview": "A minimalist family villa composed almost entirely in black and white. Crisp handle-less joinery and luminous large-format marble meet dramatic black stone floors, while bold abstract artworks give each room a strong graphic identity. The calm, monochrome interior opens through full-height glazing onto planted courtyards and a shaded roof terrace — a restrained palette built on durable, low-maintenance natural materials.",
+      "sections": [
+        {
+          "title": "Living Areas",
+          "description": "Open, gallery-like living spaces in white and black marble, defined by graphic art and sculptural lighting.",
+          "renders": [
+            { "image": "assets/images/projects/residential/afkhami-villa/01.jpg", "caption": "An open, gallery-like living room in crisp white with luminous marble floors. Low white sofas and slim-framed armchairs sit beneath a sculptural pendant, while bold black-and-white artworks and an olive tree add graphic contrast — polished large-format marble keeps the floor bright and easy to maintain." },
+            { "image": "assets/images/projects/residential/afkhami-villa/02.jpg", "caption": "A bright sitting area opens to the garden through full-height steel-framed glazing. A built-in matte-white display wall softened with greenery frames white linen seating over honed black marble — a calm palette built on durable natural stone." },
+            { "image": "assets/images/projects/residential/afkhami-villa/03.jpg", "caption": "A relaxed family lounge anchored by a grey sectional and a floating black media console. A diptych of brushed black-and-white art and a large portrait give the white walls a strong graphic identity, balanced by warm marble underfoot." }
+          ]
+        },
+        {
+          "title": "Kitchen & Dining",
+          "description": "Handle-less white kitchen and dining set against dramatic black marble.",
+          "renders": [
+            { "image": "assets/images/projects/residential/afkhami-villa/04.jpg", "caption": "An open-plan kitchen wrapped in white with a dramatic black marble backsplash and floor. A sculptural linear pendant defines the breakfast bar while concealed handle-less cabinetry keeps the lines pure — hard-wearing stone and lacquer chosen for low-maintenance daily use." },
+            { "image": "assets/images/projects/residential/afkhami-villa/05.jpg", "caption": "A refined dining space set against a charcoal display niche and lit by sheer-filtered daylight. The black marble floor grounds pale upholstered chairs and a minimal table — a restrained, monochrome composition." },
+            { "image": "assets/images/projects/residential/afkhami-villa/06.jpg", "caption": "The kitchen reads as a sculptural threshold between the dark marble service zone and the bright white living beyond. Integrated appliances, a black stone counter, and bar seating make it as functional as it is graphic." }
+          ]
+        },
+        {
+          "title": "Courtyard & Terrace",
+          "description": "Planted courtyards and a shaded roof terrace that extend the home outdoors.",
+          "renders": [
+            { "image": "assets/images/projects/residential/afkhami-villa/07.jpg", "caption": "A private courtyard with a compact plunge pool, mature trees, and outdoor seating, framed by the villa's two-storey glazed facade — an intimate green retreat carved into the home." },
+            { "image": "assets/images/projects/residential/afkhami-villa/08.jpg", "caption": "Stepped white terraces descend to the plunge pool, a single tree casting soft shadows across the rendered walls — minimalism extended to the outdoors." },
+            { "image": "assets/images/projects/residential/afkhami-villa/09.jpg", "caption": "A shaded roof terrace under a timber-battened pergola, with board-formed concrete walls, integrated planting, and an outdoor dining set — a textural, sunlit counterpoint to the monochrome interior." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "visualization",
+      "title": "Architectural Visualization & Animation",
+      "category": "Visualization & Animation",
+      "location": "Studio Project",
+      "image": "assets/images/projects/visualization/01.jpg",
+      "description": "Photorealistic 3D renders and cinematic animation that bring unbuilt spaces to life — capturing mood, light, and material long before construction begins.",
+      "homeTitle": "Architectural Visualization & Animation",
+      "homeDescription": "Bringing unbuilt spaces to life through photorealistic renders and cinematic animation — so every material, light, and detail can be experienced long before construction begins.",
       "featured": true,
-      "order": 1
+      "order": 6,
+      "overview": "A visualization study for a modular boutique hotel — exploring how light, material, and mood transform a single interior. Each scene is rendered first in rich, photographic colour and again as a dramatic monochrome study, demonstrating the full storytelling range of architectural visualization.",
+      "sections": [
+        {
+          "title": "Artistic Renders",
+          "description": "Each scene rendered in rich photographic colour — hover or tap to gently fade it into its monochrome mood study.",
+          "renders": [
+            { "fit": "flip", "images": ["assets/images/projects/visualization/01.jpg", "assets/images/projects/visualization/02.jpg"], "caption": "A deep-teal lounge wrapped in classic panelling — mustard velvet, sculptural brass lighting, and an editorial art grid." },
+            { "fit": "flip", "images": ["assets/images/projects/visualization/03.jpg", "assets/images/projects/visualization/04.jpg"], "caption": "A closer study of the seating — velvet, timber, and curated styling in soft, raking light." },
+            { "fit": "flip", "images": ["assets/images/projects/visualization/05.jpg", "assets/images/projects/visualization/06.jpg"], "caption": "A sculptural timber sideboard against fluted panelling, framed by a bold portrait and matched armchairs." },
+            { "fit": "flip", "images": ["assets/images/projects/visualization/07.jpg", "assets/images/projects/visualization/08.jpg"], "caption": "A low, intimate angle — foreground props leading the eye through the depth of the composition." }
+          ]
+        }
+      ]
     }
   ]
 }

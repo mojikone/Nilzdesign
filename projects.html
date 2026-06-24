@@ -3,19 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects — NILZ Architecture & Interior Design Group</title>
+  <title>Work — Niloufar Zanjani · Architect & Interior Designer</title>
   <link rel="icon" type="image/png" href="assets/images/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/analytics.js" defer></script>
 </head>
 <body>
 
   <section class="page-hero">
     <img src="assets/images/project-4.jpg" alt="" class="page-hero__bg">
     <div class="page-hero__content">
-      <span class="section-tag page-hero__tag">03 — Projects</span>
+      <span class="section-tag page-hero__tag">03 — Work</span>
       <h1 class="page-hero__title display">Selected <em>Work</em></h1>
     </div>
   </section>
@@ -27,7 +28,7 @@
         <button class="filter-btn active" data-filter="All">All</button>
         <button class="filter-btn" data-filter="Interior Design">Interior Design</button>
         <button class="filter-btn" data-filter="Architecture">Architecture</button>
-        <button class="filter-btn" data-filter="Landscape & Exterior">Landscape</button>
+        <button class="filter-btn" data-filter="Engineering & Technical Drawings">Technical Drawings</button>
         <button class="filter-btn" data-filter="Visualization">Visualization</button>
       </div>
       <!-- Project grid -->
@@ -35,8 +36,8 @@
       <!-- Instagram CTA -->
       <div class="projects-instagram fade-up">
         <p>See more work on Instagram</p>
-        <a href="https://www.instagram.com/nilz_architecture.atelier" target="_blank" rel="noopener" class="btn btn--outline">
-          @nilz_architecture.atelier →
+        <a href="https://www.instagram.com/nilz.design" target="_blank" rel="noopener" class="btn btn--outline">
+          @nilz.design →
         </a>
       </div>
     </div>
@@ -44,14 +45,6 @@
 
   <div id="rotating-text-placeholder"></div>
 
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  <script>
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", user => {
-        if (!user) window.netlifyIdentity.on("login", () => document.location.href = "/admin/");
-      });
-    }
-  </script>
   <script type="module">
     import { initHeader } from './js/components/header.js';
     import { initFooter } from './js/components/footer.js';
