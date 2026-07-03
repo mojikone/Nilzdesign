@@ -28,6 +28,11 @@ export function initMarquee() {
   }
 }
 
+export function revealFadeUps() {
+  document.querySelectorAll('.fade-up').forEach(el => el.classList.add('visible'));
+}
+window.__revealFadeUps = revealFadeUps;
+
 export function init() {
   initFadeUps();
   initMarquee();
